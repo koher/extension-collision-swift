@@ -13,5 +13,5 @@ for x: UInt8 in n {
 }
 
 // Duplicate method
-useA(for: 42)
-useB(for: 42)
+useA(for: 65534)
+useB(for: 65534)

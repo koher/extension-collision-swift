@@ -10,12 +10,15 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "ExtensionCollision",
-            dependencies: ["ModuleA", "ModuleB"]),
+            dependencies: ["ModuleA", "ModuleB", "ModuleC"]),
         .target(
             name: "ModuleA",
             dependencies: []),
         .target(
             name: "ModuleB",
+            dependencies: []),
+        .target(
+            name: "ModuleC",
             dependencies: []),
         .testTarget(
             name: "ExtensionCollisionTests",
