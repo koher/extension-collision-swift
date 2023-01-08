@@ -1,3 +1,4 @@
+// Duplicate conformance of the same protocol
 import ModuleA
 import ModuleB
 
@@ -11,5 +12,6 @@ for x: UInt8 in n {
     print(x)
 }
 
-useA(for: n)
-useB(for: n)
+// Duplicate method
+useA(for: 42)
+useB(for: 42)
